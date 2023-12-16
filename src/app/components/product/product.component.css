@@ -1,10 +1,28 @@
 body {
 }
 
+.centroPadre{
+    background-color: #ff7500;
+    width: 75%;
+    height:100px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+
+
+.item {
+    background-color: blue;
+}
+
+
 .fondoCardUno {
     display: flex;
-    background-color: #454142;
-    min-height: 40vh;
+    background-color: #ff7500;
+    height: 500px;
     align-items: center;
 }
 
@@ -16,8 +34,8 @@ body {
 }
 
 .txtTotalCuenta {
-    font-size: large;
-    color: #fff
+    font-size: xx-large;
+    color: #fffF
 }
 
 .btnCard {
@@ -28,7 +46,7 @@ body {
 .cardAll {
     width: 80%;
     height: 13rem !important;
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 .card-body {
@@ -103,8 +121,6 @@ body {
     }
 }
 
-/*css tarjeta ahorro programado*/
-
 .cardAhorroProg {
     background-color: #fff;
 }
@@ -116,7 +132,7 @@ body {
 }
 
 .text-muted {
-    font-size: xx-small;
+    font-size: medium;
     color: red;
 }
 
