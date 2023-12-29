@@ -1,0 +1,134 @@
+.divTexto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imgPersona {
+  /*  background-repeat: no-repeat;
+    background-size: contain;
+    height: 48vh;*/
+    width: 450px;
+    height: auto;
+    border-radius: 9px;
+    border: 1px solid #718063;
+}
+
+.form-check-input:checked {
+    /*background-color: rgb(105, 105, 105) !important;*/
+    background-color: #1e70f5;
+    border: 0.5px solid #737373;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    background-color: #b4e9f6;
+    border-radius: 15px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+    height: 350px;
+
+}
+
+.divLabelData {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    color: #454142;
+}
+
+
+.txtCheck {
+    /*width: 100%;
+    left: 900px;*/
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: justify;
+    /*display: flex;
+    align-items: center;*/
+    /* Gris placholder 
+    */
+    cursor: pointer;
+    color: #919191;
+}
+
+    .txtCheck:hover {
+        color:#1e70f5;
+        font-size: 12px;
+        text-decoration: underline;
+    }
+
+    
+
+/*style modal autorizacion*/
+.divAutoInfoModal {
+    position: absolute;
+    width: 560px;
+    height: 270px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+    border-radius: 15px;
+}
+
+.txtAutoTitle {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 20px;
+    color: #338de7;
+    text-align: center;
+}
+
+/*css para txt de autorizacion de veficiacion*/
+.txtAutoBody {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+
+.divTxtHelp {
+    display: flex;
+    flex-direction: row;
+    gap: 0.1rem;
+    justify-content: flex-start;
+    align-items: center;
+    /* height: 5vh;*/
+}
+
+.colB {
+    text-align: center;
+    padding-bottom: 2vw;
+}
+
+
+.btn-aceptar {
+    /*display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;*/
+    width: 120px;
+   
+    gap: 10px;
+    color: #fff;
+    background-color: #1e70f5;
+    border-radius: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight:600;
+}
+
+.formatCajaTxt {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    border-radius: 10px;
+    width: 50%;
+}

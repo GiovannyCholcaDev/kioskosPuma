@@ -1,0 +1,92 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-5">
+            <img src="assets/img/product2.png" class="imgPersona">
+        </div>
+
+        <div class="col-6">
+
+            <div class="row px-0 pt-4">
+                <div class="mb-3 divTexto">
+                    <h3>Ingresa tu Información</h3>
+                </div>
+            </div>
+
+            <div class="contenedor">
+
+                    <div class="divLabelData">*Cédula</div>
+                        <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '');" maxlength="10"
+                            class="formatCajaTxt form-control">
+
+                    <div class="divLabelData">*Código</div>
+                    <input type="text" maxlength="5"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                            class="formatCajaTxt form-control">
+
+
+                    <div class="divLabelData">*Número celular</div>
+                    <input type="text" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                            class="formatCajaTxt form-control">
+
+                    <div class="divLabelData">*Correo electrónico</div>
+                    <input type="email" maxlength="40" onblur="onchangeEmail" class="formatCajaTxt form-control">
+                    
+
+                    <div class="divTxtHelp">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                        </div>
+                        <div class="btn-group dropup">
+                            <label class="txtCheck" data-bs-toggle="dropdown" aria-expanded="false"
+                                data-bs-auto-close="outside">Autorizo a la MarketPlace Puma a validar mi
+                                información de fuentes oficiales</label>
+                            <ul class="divAutoInfoModal dropdown-menu">
+                                <li>
+                                    <div class="border border-0 pt-2 px-0  mb-3">
+                                        <div class="border border-0 px-0 txtAutoTitle">
+                                            Autorización de verificación de información
+                                        </div>
+                                    </div>
+
+                                    <div class="container">
+                                        <div class="container txtAutoBody border border-0 px-2">
+                                            <div class="container border border-0 mb-3">
+                                                Autorizo de forma expresa a MarketPlace S.A.,
+                                                para que obtenga o verifique mis datos personales,
+                                                patrimoniales
+                                                o crediticios, anteriores o posteriores a esta autorización,
+                                                en cualquier momento y de cualqueir fuente de información
+                                                que esté autorizada a registrar datos y proporcionar
+                                                referencias sobre ellos.
+                                            </div>
+                                            <div class="container border border-0">
+                                                Además de las comunicaciones a mis datos de contacto dejados
+                                                en este formulario.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="colB">
+                        <button class="btn btn-aceptar" routerLink="/products" (click)="onClickNext()">
+                            Ingresar
+                        </button>
+                    </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+

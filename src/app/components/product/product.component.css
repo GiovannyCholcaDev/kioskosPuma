@@ -1,41 +1,13 @@
-body {
-}
 
-.centroPadre{
-    background-color: #ff7500;
-    width: 75%;
-    height:100px;
-
+.marcoProductos {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    
+    background-color: #0c7fb4;
+    height: 630px;
+    align-items: self-start;
 }
 
-
-.item {
-    background-color: blue;
-}
-
-
-.fondoCardUno {
-    display: flex;
-    background-color: #ff7500;
-    height: 500px;
-    align-items: center;
-}
-
-.fondoCardDos {
-    display: flex;
-    background-color: #3b3738;
-    min-height: 43vh;
-    align-items: center;
-}
-
-.txtTotalCuenta {
+.txtProduct {
     font-size: xx-large;
-    color: #fffF
 }
 
 .btnCard {
@@ -60,75 +32,16 @@ body {
 }
 
 
-/*css para card cuenta de ahorro*/
-
-.cardCuentaAhorro {
-   /* background: #ff7505 url(../img/fondoCuentaAhorro.svg) no-repeat;*/
-}
-
-.txtCtaAhorro {
-    color: #fff;
-}
-
-.txtSizeVal {
-    font-size: xx-large;
-}
-
 .btnEndCard {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     height: 100%;
 }
 
-
-
-.btnVerMov {
-    color: #ff7500;
-    background-color: #fff;
-    border-color: #fff;
-    border-radius: 10px;
-    font-size: x-small;
-    font-weight: 600;
-}
-
-    .btnVerMov:active {
-        color: #fff;
-        background-color: #ff7500;
-        border-color: #fff;
-        border-radius: 10px;
-    }
-
-
-/*css animacion entrada card cta ahorr y simulador de inversion*/
-.divAnimatedAhorro {
-    position: relative;
-    animation-name: animatedAhorro;
-    animation-duration: 7s;
-    animation-delay: 0s;
-}
-
-@keyframes animatedAhorro {
-    0% {
-        background-color: #fff;
-        left: -90px;
-        top: 0px;
-    }
-
-    25% {
-        background-color: #e6e1e1;
-        left: 1.0px;
-        top: 0px;
-    }
-}
-
-.cardAhorroProg {
-    background-color: #fff;
-}
-
-.divInteresTasa {
+.divPrecios {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
 .text-muted {
@@ -136,7 +49,7 @@ body {
     color: red;
 }
 
-.btnVerRendimiento {
+.btnComprar {
     color: #3b3738;
     background-color: #e6e1e1;
     border-color: #fff;
@@ -145,15 +58,15 @@ body {
     font-weight: 600;
 }
 
-    .btnVerRendimiento:active {
+    .btnComprar:active {
         color: #fff;
-        background-color: #ff7500;
+        background-color: #0c7fb4;
         border-color: #fff;
         border-radius: 10px;
     }
 
 /*animated las demas tarjetas*/
-.divAnimatedAhorroPro {
+.divAnimatedCard {
     position: relative;
     animation-name: animatedAhorroPro;
     animation-duration: 7s;
@@ -180,23 +93,23 @@ body {
 /**/
 @media (hover: hover) {
 
-    .btnVerRendimiento:hover {
+    .btnComprar:hover {
         color: #fff;
-        background-color: #ff7500;
+        background-color: #0c7fb4;
         border-color: #fff;
         border-radius: 10px;
     }
 
     .btnVerMov:hover {
         color: #fff;
-        background-color: #ff7500;
+        background-color: #0c7fb4;
         border-color: #fff;
         border-radius: 10px;
     }
 
-    .col:hover .btnVerRendimiento {
+    .col:hover .btnComprar {
         color: #fff;
-        background-color: #ff7500;
+        background-color: #49c2f1;
         border-color: #fff;
         border-radius: 10px;
     }
@@ -207,51 +120,9 @@ body {
 }
 
 
-/*css tarjeta 3  simulador ahorro prog*/
-/* height: 100%;  height: 10vh; */
-.imgSimuladorAhorro {
-  /*  background-image: url("../img/simularAhorroProg.png");*/
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 80%;
-}
-
-.divBtnSimAhorroProg {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    /*align-self: flex-end;
-    height: 20%;*/
-}
-
-.txtSimAhorroProg {
-    font-size: small;
-    font-weight: 600;
-}
-
-
-/*css tarjeta simulador de inversion */
-.imgSimuladorInversion {
-   /* background-image: url("../img/simularInversion.png");*/
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 80%;
-}
-
-
-/*css solicitar prestamo digital*/
-
-.imgSolicitaPrestamo {
-  /*  background-image: url("../img/solicitaPrestamoDigital.png");*/
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 80%;
-}
-
-/*css solicitar tarjeta de credito*/
-.imgSolicitaTarjeta {
-  /*  background-image: url("../img/solicitaTarjeta.png");*/
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 80%;
+.imgProduct {
+    width: 150px;
+    height: auto;
+    border-radius: 9px;
+    border: 1px solid #718063;
 }
