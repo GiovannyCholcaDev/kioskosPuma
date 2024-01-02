@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductComponent } from './components/product/product.component';
 import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -18,17 +19,17 @@ import { LoginComponent } from './components/login/login.component';
     FooterComponent,
     NavbarComponent,
     ProductComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [ProductComponent],
+  bootstrap: [AppComponent],
   exports: [
-    ProductComponent
+    AppComponent
   ]
 })
 export class AppModule { }

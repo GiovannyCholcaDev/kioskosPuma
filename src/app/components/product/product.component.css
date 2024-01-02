@@ -2,7 +2,7 @@
 .marcoProductos {
     display: flex;
     background-color: #0c7fb4;
-    height: 630px;
+    height: 80vh;
     align-items: self-start;
 }
 
@@ -121,8 +121,15 @@
 
 
 .imgProduct {
-    width: 150px;
+    width: 130px;
     height: auto;
     border-radius: 9px;
     border: 1px solid #718063;
 }
+
+
+#footer {
+    bottom: 0;
+    width: 99%;
+    height: 2.5rem;            /* altura de pie de página */
+  }

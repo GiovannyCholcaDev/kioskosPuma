@@ -14,10 +14,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
-
   onClickNext(){
-
     this.router.navigate(['/products']);
   }
 
